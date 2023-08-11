@@ -23,7 +23,7 @@
                     </div>
                     <div class="text-left my-4">
                         <p class="font-bold">ทำวันที่:</p>
-                        <input type="datetime-local" name="do_datetime" class="w-full bg-slate-100 rounded-md p-2 border @error('do_datetime') border-red-400 @enderror value="{{ isset($oldData['do_datetime']) ? $oldData['do_datetime'] : '' }}"">
+                        <input type="datetime-local" name="do_datetime" class="w-full bg-slate-100 rounded-md p-2 border @error('do_datetime') border-red-400 @enderror" value="{{ isset($oldData['do_datetime']) ? $oldData['do_datetime'] : '' }}">
                         @error('do_datetime')
                             <div class="text-sm text-red-500">*{{ $message }}</div>
                         @enderror
