@@ -1,10 +1,10 @@
+
 document.addEventListener("DOMContentLoaded", function () {
-    const deleteButton = document.querySelector("#delete-button");
     const cancelButton = document.querySelector("#cancel-button");
     const modalBackdrop = document.querySelector("#confirm-modal");
     const confirmButton = document.querySelector("#confirm-button"); 
 
-    const showModal = () => {
+    window.showModal = function() {
         modalBackdrop.style.display = "flex";
         modalBackdrop.style.opacity = 0;
         setTimeout(() => {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 0); 
     };
     
-    const hideModal = () => {
+    window.hideModal = () => {
         modalBackdrop.style.opacity = 0;
         setTimeout(() => {
             modalBackdrop.style.display = "none";
@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     cancelButton.addEventListener("click", hideModal);
-
-    deleteButton.addEventListener("click", showModal);
-
+    
     confirmButton.addEventListener("click", () => {
         const target = confirmButton.getAttribute("data-target");
         document.getElementById(target).submit();
