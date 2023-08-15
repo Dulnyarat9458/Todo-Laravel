@@ -15,13 +15,13 @@
                         <div>{{ $todo->detail }}</div>
                         <br>
                         <div class="font-semibold">Time:</div>
-                        <div>{{ $todo->do_datetime }}</div>
+                        <div>{{ $todo->due_time }}</div>
                         <br>
                         <div class="font-semibold">Status:</div>
                         @if($todo->is_done)
                             <div class="text-green-600">Done</div>
                         @else
-                            @if ($todo->do_datetime < now())
+                            @if ($todo->due_time < now())
                             <label class="text-red-600">
                                 Late
                             </label>

@@ -27,8 +27,8 @@
                         </div>                    
                         <div class="text-left my-4">
                             <p class="font-bold">ทำวันที่:</p>
-                            <input type="datetime-local" name="do_datetime" class="w-full bg-slate-100 rounded-md p-2 border @error('do_datetime') border-red-400 @enderror" value="{{ isset($oldData['do_datetime']) ? $oldData['do_datetime'] : $todo->do_datetime }}">
-                            @error('do_datetime')
+                            <input type="datetime-local" name="due_time" class="w-full bg-slate-100 rounded-md p-2 border @error('due_time') border-red-400 @enderror" value="{{ isset($oldData['due_time']) ? $oldData['due_time'] : $todo->due_time }}">
+                            @error('due_time')
                                 <div class="text-sm text-red-500">*{{ $message }}</div>
                             @enderror
                         </div>
