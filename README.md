@@ -5,7 +5,7 @@ This is simple todo list project , that you can memo your list of tasks that an 
 Laravel, Tailwindcss 
 
 # How to run This project
-1.create .env file
-2.update compose
-3.run "composer update"
-4.run "./vendor/bin/sail up"
+1.create .env file<br>
+2.update compose<br>
+3.run "composer update"<br>
+4.run "./vendor/bin/sail up"<br>
