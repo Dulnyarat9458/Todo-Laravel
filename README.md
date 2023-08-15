@@ -8,4 +8,4 @@ Laravel, Tailwindcss
 1.create .env file<br>
 2.update compose<br>
 3.run "composer update"<br>
-4.run "./vendor/bin/sail up"<br>
+4.run "./vendor/bin/sail up" (must install docker, docker-compose)<br>
