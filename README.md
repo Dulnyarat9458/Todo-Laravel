@@ -1,7 +1,7 @@
 # About Todo Laravel
 This is simple todo list project , that you can memo your list of tasks that an individual needs to complete or accomplish. 
 
-# Created by
+# Created by using
 Laravel, Tailwindcss 
 
 # How to run This project
