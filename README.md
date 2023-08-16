@@ -9,3 +9,4 @@ Laravel, Tailwindcss
 2.update compose<br>
 3.run "composer update"<br>
 4.run "./vendor/bin/sail up" (must install docker, docker-compose)<br>
+5.run "npm run dev"
