@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 
+
+use App\Http\Resources\UserResource; 
+use App\Models\User;
+
+
 class TodoController extends Controller
 {
     public function index(Request $request)
@@ -30,7 +35,7 @@ class TodoController extends Controller
 
     public function create()
     {
-        return view('todos.create')->with('oldData', old());
+        return view('todos.create');
     }
 
     public function store(Request $request)
@@ -99,4 +104,14 @@ class TodoController extends Controller
             ->route('todos.index')
             ->with('success', 'todo has been deleted successfully.');
     }
+
+
+
+    public function getUsersByLimit(Request $request)
+    {
+        $number = $request->input('number');
+        $users = User::limit($number)->get();
+        return UserResource::collection($users)->response()->setStatusCode(200);
+    }
+
 }
