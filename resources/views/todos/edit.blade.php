@@ -29,7 +29,7 @@
                             @enderror
                         </div>
                         <div class="text-left my-4">
-                            <p class="font-bold">ทำวันที่s:</p>
+                            <p class="font-bold">ทำวันที่:</p>
                             <input type="datetime-local" name="due_time"
                                 class="w-full bg-slate-100 rounded-md p-2 border @error('due_time') border-red-400 @enderror"
                                 value="{{ old('due_time', $todo->due_time) }}">
